@@ -1,0 +1,10 @@
+def explode(x):
+    if x == int(x) and x > 0:
+        t = ()
+        while x > 0:
+            t = t + (x % 10)
+            x = x // 10
+        return t
+    else:
+        raise ValueError('explode: argumento nao inteiro')
+        
